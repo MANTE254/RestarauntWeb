@@ -3,72 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raybells Restaurant</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f8f8f8;
-            color: #333;
-        }
-        header {
-            background: #c0392b;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background: #e74c3c;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .hero {
-            background: url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1500&q=80') no-repeat center/cover;
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.6);
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-        .section {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        .menu-items {
-            display: grid;
-            gap: 20px;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        }
-        .card {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        footer {
-            background: #c0392b;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-        }
-    </style>
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
-
 <header>
-    <h1>Raybells Restaurant</h1>
+    <h1>Mante Restaurant</h1>
     <p>Where taste meets tradition.</p>
 </header>
 
@@ -76,10 +17,11 @@
     <a href="#menu">Menu</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
+    <a href="Dev/aboutDev.html">AboutDev</a>
 </nav>
 
 <div class="hero">
-    Welcome to Raybells
+    Welcome to Mante
 </div>
 
 <section id="menu" class="section">
@@ -106,18 +48,22 @@
 
 <section id="about" class="section">
     <h2>About Us</h2>
-    <p>Raybells Restaurant is committed to serving fresh, delicious meals with a touch of tradition. We bring people together through food, flavor, and unforgettable service.</p>
+    <p>Mante Restaurant is committed to serving fresh, delicious meals with a touch of tradition. We bring people together through food, flavor, and unforgettable service.</p>
 </section>
 
 <section id="contact" class="section">
     <h2>Contact</h2>
     <p>📍 Location: Nyeri, Kenya</p>
-    <p>📞 Phone: 0712 345 678</p>
-    <p>⏰ Opening Hours: 8:00 AM – 10:00 PM</p>
+    <p>📞 Phone: +254123456789</p>
+    <div class="working-hours">
+        <h1>Open Hours</h1>
+        <p>Monday - Friday: <strong>8:00 AM - 10:00 PM</strong></p>
+        <p>Saturday - Sunday : <strong>Closed</strong></p>
+    </div>
 </section>
 
 <footer>
-    © 2025 Raybells Restaurant — All Rights Reserved.
+    © 2025 Mante Restaurant — All Rights Reserved.
 </footer>
 </body>
 </html>
