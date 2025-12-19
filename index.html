@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mante Restaurant | Fine Kenyan Dining</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="index.js" defer></script>
     <style>
     </style>
@@ -54,17 +54,94 @@
 
 <section id="contact" class="section">
     <h2>Contact</h2>
-    <p>📍 Location: Nyeri, Kenya</p>
-    <p>📞 Phone: +254123456789</p>
-    <div class="working-hours">
-        <h1>Open Hours</h1>
-        <p>Monday - Friday: <strong>8:00 AM - 10:00 PM</strong></p>
-        <p>Saturday - Sunday: <strong>Closed</strong></p>
+    <div class="phone-number">
+        <h3>Phone Number</h3>
+        <p>+254 700 123456</p>
+    </div>
+    <div class="whatsapp-number">
+        <h3>WhatsApp</h3>
+        <p><a href="https://wa.me/254700123456">+254 700 123456</a></p>
+    </div>
+    <div class="email">
+        <h3>Email</h3>
+        <div class="email-form">
+            <form>
+                <label for="name" class="name-label">Your Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Mante web dev" required><br>
+                <label for="email" class="email-label">Your Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Manteweb@gmail.com" required><br>
+                <label for="message" class="message-label">Your Message:</label><br>
+                <textarea id="message" name="message" placeholder="Hy Mante restaurant,may i get my order for today?" required></textarea>
+                <button type="submit" class="submit-button">Send</button>
+            </form>
+        </div>
     </div>
 </section>
+<section class="working-hours">
+    <h1>Working hours</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr class="day weekday open">
+            <td>Monday - Friday</td>
+            <td>8:00 AM - 10:00 PM</td>
+        </tr>
+        <tr class="day saturday">
+            <td>Saturday</td>
+            <td>8:00 AM - 12:00 PM</td>
+        </tr>
+        <tr class="day closed">
+            <td>Sunday</td>
+            <td>Closed</td>
+        </tr>
+        <tr class="day holiday closed">
+            <td>Public Holidays</td>
+            <td>Closed</td>
+        </tr>
+        <tr class="day calender" id="calendar">
+            <td colspan="2">View our calender</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+<!-- <div id="restaurant-calendar">
+    <h2>Restaurant Operations</h2>
+    <table id="calendar">
+        <thead>
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+        </thead>
+        <tbody id="calendar-body">
+            JS will fill this
+        </tbody>
+    </table>
+</div> -->
+
 
 <footer>
-    © <span id="year"></span> Mante Restaurant — All Rights Reserved.
+    <p>© <span id="year"></span> Mante Restaurant — All Rights Reserved.</p>
+    <div class="social-links">
+        <p>Follow us on:</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/mante-restaurant" target="_blank" ><img src="media/unnamed.jpg"></a>
+            <a href="https://www.facebook.com/mante-restaurant" target="_blank" ><img src="media/unnamed.jpg"></a>
+            <a href="https://www.facebook.com/mante-restaurant" target="_blank" ><img src="media/unnamed.jpg"></a>
+            <a href="https://www.facebook.com/mante-restaurant" target="_blank" ><img src="media/unnamed.jpg"></a>
+        </div>
+    </div>
+
 </footer>
 </body>
 </html>
